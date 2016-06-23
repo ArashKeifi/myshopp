@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset addfieldpath="/administrator/components/com_proshopp/models/fields">
+        <field
+                name="id"
+                type="hidden"
+        />
+        <field name="published"
+               type="list"
+               label="JSTATUS"
+               class="form-control"
+               size="1"
+               default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+            <option value="2">JARCHIVED</option>
+            <option value="-2">JTRASHED</option>
+        </field>
+        <field
+                name="name"
+                type="text"
+                label="COM_PROSHOPP_PRODUCTS_NAME_FIELD_NAME"
+                description="COM_PROSHOPP_PRODUCTS_FIELD_NAME_DESCRIPTION"
+                required="true"
+                size="20"
+                class="form-control input-lg m-b"
+        />
+        <field
+                name="icon"
+                type="media"
+                preview="true"
+                label="COM_PROSHOPP_TYPE_ICON_FIELD_NAME"
+                description="COM_PROSHOPP_TYPE_ICON_FIELD_DESCRIPTION"
+                class="form-control"
+        />
+    </fieldset>
+</form>

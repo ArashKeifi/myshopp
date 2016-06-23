@@ -1,0 +1,35 @@
+    .evo-cp-wrap {
+        width: 195px !important;
+        margin-left: 8px;
+        display: inline-flex;
+        margin-top: 5px;
+    }
+    span.handle {
+        color: #868686;
+        cursor: move;
+        margin-left: 5px;
+            border-right: 1px dotted #ccc;
+    padding-right: 15px;
+    }
+    .colorPicker{
+        width: 100px;
+        margin-right: 5px;
+    }
+    input.color_value {
+        margin-top: 5px;
+        margin-bottom: 4px;
+    }
+    .sortable .col-lg-1:first-child{
+        padding-top: 12px;
+    }
+    .sortable a.fa.fa-trash {
+        color: #C34949;
+        font-size: 15px;
+        cursor: pointer;
+        margin-top: 13px;
+        padding-left: 20px;
+        border-left: 1px dotted #ccc;
+    }
+    .ui-widget-content {
+        background: #FFF;
+    }

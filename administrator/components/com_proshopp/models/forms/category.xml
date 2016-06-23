@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="params" addfieldpath="/administrator/components/com_proshopp/models/fields">
+        <fieldset name="params" >
+            <field
+                    name="category_type"
+                    type="ProductType"
+                    label="COM_CATEGORY_TYPE_FIELD"
+                    description="Select category type"
+                    required="true"
+            />
+        </fieldset>
+    </fields>
+</form>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field
+                name="id"
+                type="hidden"
+        />
+        <field
+            name="name"
+            type="text"
+            label="COM_PROSHOPP_PRODUCTS_NAME_FIELD_NAME"
+            description="COM_PROSHOPP_PRODUCTS_FIELD_NAME_DESCRIPTION"
+            required="true"
+            size="20"
+            class="form-control input-lg m-b"
+            />
+        <field
+            name="summary"
+            type="textarea"
+            label="COM_PROSHOPP_PRODUCTS_SUMMARY_FIELD_NAME"
+            description="COM_PROSHOPP_PRODUCTS_SUMMARY_FIELD_DESCRIPTION"
+            required="true"
+            filter="safehtml"
+            rows="5"
+            class="form-control"
+            />
+        <field
+            name="meta_title"
+            type="text"
+            label="COM_PROSHOPP_PRODUCTS_META_TITLE_FIELD_NAME"
+            description="COM_PROSHOPP_PRODUCTS_META_TITLE_FIELD_DESCRIPTION"
+            required="true"
+            size="20"
+            class="form-control input-mb m-b"
+            />
+        <field
+            name="tags"
+            type="tag"
+            label="JTAG"
+            description="JTAG_DESC"
+            class="inputbox span9 small"
+            multiple="true"
+            mode="ajax"
+            />
+        <field
+            name="meta_description"
+            label="COM_PROSHOPP_PRODUCTS_META_DESCRIPTION_FIELD_NAME"
+            description="COM_PROSHOPP_PRODUCTS_META_DESCRIPTION_FIELD_DESCRIPTION"
+            type="textarea"
+            class="form-control"
+            rows="3"
+            />
+        <field
+                name="meta_keywords"
+                type="text"
+                label="COM_PROSHOPP_PRODUCTS_META_KEYWORD_FIELD_NAME"
+                size="20"
+                class="form-control input-mb m-b"
+        />
+        <field
+                name="description"
+                label="COM_PROSHOPP_PRODUCTS_DESCRIPTION_FIELD_NAME"
+                description="COM_PROSHOPP_PRODUCTS_DESCRIPTION_FIELD_DESCRIPTION"
+                type="editor"
+            />
+        <field name="published"
+               type="list"
+               label="JSTATUS" description="COM_BANNERS_FIELD_STATE_DESC"
+               class="form-control m-b chosen-select"
+               size="1"
+               default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+            <option value="2">JARCHIVED</option>
+            <option value="-2">JTRASHED</option>
+        </field>
+        <field name="category_id"
+               type="category"
+               extension="com_proshopp"
+               label="JCATEGORY"
+               required="true"
+               class="form-control m-b chosen-select"
+            />
+        <field
+            name="badge"
+            type="producttag"
+            label="COM_PROSHOPP_PRODUCTS_BADGE_FIELD_NAME"
+            description="COM_PROSHOPP_PRODUCTS_BADGE_FIELD_DESCRIPTION"
+            class="form-control m-b chosen-select"
+            >
+        <option value="0">None</option>
+    </field>
+        <field
+            name="default_pic"
+            type="media"
+            preview="false"
+            label="COM_PROSHOPP_PRODUCTS_PIC_FIELD_NAME"
+            description="COM_PROSHOPP_PRODUCTS_PIC_FIELD_DESCRIPTION"
+            class="form-control"
+            />
+        <field
+                name="features"
+                type="ProductFeature"
+                label="COM_PROSHOPP_PRODUCTS_GALLERY_FIELD_NAME"
+        />
+        <field
+                name="price"
+                type="ProductPrice"
+                label="COM_PROSHOPP_PRODUCTS_GALLERY_FIELD_NAME"
+        />
+        <field
+                name="service"
+                type="ProductService"
+                label="COM_PROSHOPP_PRODUCTS_GALLERY_FIELD_NAME"
+        />
+        <field
+                name="skus"
+                type="ProductSkus"
+                label="COM_PROSHOPP_PRODUCTS_SUK_FIELD_NAME"
+        />
+        <field
+                name="stock"
+                type="ProductStock"
+                label="COM_PROSHOPP_PRODUCTS_STOCK_FIELD_NAME"
+        />
+    </fieldset>
+</form>

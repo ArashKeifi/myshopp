@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field
+                name="id"
+                type="hidden"
+        />
+        <field
+                name="product_id"
+                type="hidden"
+        />
+        <field
+                name="feature_id"
+                type="hidden"
+        />
+        <field
+                name="feature_value"
+                type="hidden"
+        />
+    </fieldset>
+</form>

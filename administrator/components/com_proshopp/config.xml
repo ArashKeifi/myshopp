@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		name="basic"
+		label="JCONFIG_BASIC_LABEL" >
+		<field
+			name="multilang"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			default="0"
+			label="COM_PROSHOPP_CONFIG_FIELD_MULTILANG_LABEL">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="smsplugin" type="plugins" folder="proshopp-sms"
+			   description="COM_PROSHOPP_CONFIG_FIELD_SMS_CONFIG_DESC"
+			   label="COM_PROSHOPP_CONFIG_FIELD_SMS_CONFIG_LABEL" >
+			   <option value="0">JOPTION_DO_NOT_USE</option>
+		</field>
+		<field name="emailplugin" type="plugins" folder="proshopp-email"
+			   description="COM_PROSHOPP_CONFIG_FIELD_EMAIL_CONFIG_DESC"
+			   label="COM_PROSHOPP_CONFIG_FIELD_EMAIL_CONFIG_LABEL" >
+			<option value="0">JOPTION_DO_NOT_USE</option>
+		</field>
+		<field name="status_type"
+		type="repeatable"
+		icon="list"
+		description="COM_PROSHOPP_CONFIG_FIELD_STATUS_TYPE_DESC"
+		label="COM_PROSHOPP_CONFIG_FIELD_STATUS_TYPE_LABEL">
+			<fieldset repeat="true" hidden="true">
+				<field name="id" type="number" default="0" class="input-mini" label="ID" autocomplete="true" min="0" max="20" step="1" />
+				<field name="color" type="color" default="#eee" label="Select a color"/>
+				<field name="status_name" class="input-medium"
+					label="COM_PROSHOPP_CONFIG_FIELD_STATUS_NAME_LABEL"
+					size="5"
+					type="text" />
+				<field name="show_user" type="list" class="input-small" label="Show status to user">
+					<option value="0">hidden</option>
+					<option value="1">show</option>
+				</field>
+
+				<field name="stock" type="list" class="input-medium"
+					   description="COM_PROSHOPP_CONFIG_FIELD_STOCK_DESC"
+					   label="COM_PROSHOPP_CONFIG_FIELD_STOCK_LABEL" >
+					<option value="0">JOPTION_DO_NOT_USE</option>
+					<option value="deducation">COM_PROSHOPP_DEDUCTED_FROME_THE_STOCK</option>
+					<option value="return">COM_PROSHOPP_RETURN_TO_STOCK</option>
+				</field>
+				<field name="user_alert" type="list" class="input-small"
+					   label="COM_PROSHOPP_CONFIG_FIELD_USER_ALERT_LABEL" >
+					<option value="0">JOPTION_DO_NOT_USE</option>
+					<option value="sms">COM_PROSHOPP_CONFIG_FIELD_USER_ALERT_SMS</option>
+					<option value="email">COM_PROSHOPP_CONFIG_FIELD_USER_ALERT_EMAIL</option>
+					<option value="smsemail">COM_PROSHOPP_CONFIG_FIELD_USER_ALERT_SMS_EMAIL</option>
+				</field>
+				<field name="sms_message" class="input-medium" type="sql" label="COM_PROSHOPP_CONFIG_FIELD_SMS_MESSAGE_LABEL" query="SELECT id, title FROM #__shopp_message where type=2" key_field="id" value_field="title" >
+					<option value="0">JOPTION_DO_NOT_USE</option>
+				</field>
+				<field name="email_message" class="input-medium" type="sql" label="COM_PROSHOPP_CONFIG_FIELD_EMAIL_MESSAGE_LABEL" query="SELECT id, title FROM #__shopp_message where type=1" key_field="id" value_field="title" >
+					<option value="0">JOPTION_DO_NOT_USE</option>
+				</field>
+			</fieldset>
+		</field>
+		<field name="producttags" type="textarea"  label="COM_PROSHOPP_CONFIG_FIELD_PRODUCT_TAG_LABEL" description="COM_PROSHOPP_CONFIG_FIELD_PRODUCT_TAG_DESC" rows="5" cols="5" />
+	</fieldset>
+		<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC" >
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_proshopp"
+			section="component"
+		/>
+	</fieldset>
+</config>

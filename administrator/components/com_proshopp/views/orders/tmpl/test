@@ -1,0 +1,21 @@
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th><?php echo JText::_('COM_PROSHOPP_ADMIN_MANAGER_DATE') ?></th>
+        <th><?php echo JText::_('COM_PROSHOPP_ADMIN_MANAGER_ORDER_PAYMENT_METHOD') ?></th>
+        <th><?php echo JText::_('COM_PROSHOPP_ADMIN_MANAGER_ORDER_PAYMENT_TRANSACTION_ID') ?></th>
+        <th><?php echo JText::_('COM_PROSHOPP_ADMIN_MANAGER_ORDER_PAYMENT_AMOUNT') ?></th>
+        <th><?php echo JText::_('COM_PROSHOPP_ADMIN_MANAGER_ORDER_PAYMENT_AMOUNT') ?></th>
+        <th><?php echo JText::_('COM_PROSHOPP_ADMIN_MANAGER_ACTION') ?></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td></td>
+        <td>Samantha</td>
+        <td class="text-navy"></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>

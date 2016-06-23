@@ -1,0 +1,12 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* ========================================================================
+   Use this file to add custom CSS easily
+ ========================================================================== */
+
+@font-face {
+    font-family: 'byekan';
+    src:url('../fonts/yekan.eot?#') format('eot'),
+    url('../fonts/yekan.woff') format('woff'),
+    url('../fonts/yekan.ttf') format('truetype');
+}
